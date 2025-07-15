@@ -1,0 +1,267 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar h2, .sidebar h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.sidebar p {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #0f172a;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.section p, .section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0ea5e9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+/* ------------------------------------- */
+/* 🌒 DARK MODE + OS PREFERENCE SUPPORT */
+/* ------------------------------------- */
+
+/* Light mode defaults (in case prefers-color-scheme is not supported) */
+body.light-mode {
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Dark mode base styles */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+body.dark-mode header {
+  background: linear-gradient(to right, #1e293b, #0f172a);
+  color: #f1f5f9;
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.dark-mode .main-content {
+  background-color: #0f172a;
+}
+
+body.dark-mode .section {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode a {
+  color: #38bdf8;
+}
+
+/* Match OS preference */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+
+  body:not(.light-mode) header {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+  }
+
+  body:not(.light-mode) .sidebar {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #334155;
+  }
+
+  body:not(.light-mode) .main-content {
+    background-color: #0f172a;
+  }
+
+  body:not(.light-mode) .section {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  body:not(.light-mode) a {
+    color: #38bdf8;
+  }
+}
+
+/* Light/dark reactive text */
+.text-theme {
+  color: #1e293b; /* dark blue for light mode */
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .text-theme {
+  color: #f1f5f9; /* light gray/white for dark mode */
+}

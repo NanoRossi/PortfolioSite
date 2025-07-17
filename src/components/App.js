@@ -1,9 +1,14 @@
 // App.js
 import { useState, useEffect } from 'react';
-import './App.css';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContent';
+import '../css/App.css';
+import '../css/CollapsibleSection.css';
+import '../css/Header.css';
+import '../css/Section.css';
+import '../css/Sidebar.css';
+
+import Header from './Header';
+import Sidebar from './Sidebar';
+import MainContent from './MainContent';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

@@ -1,4 +1,3 @@
-import React from 'react';
 import Education from './Education';
 import WorkHistory from './WorkHistory';
 import Projects from './Projects';

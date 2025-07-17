@@ -1,68 +1,30 @@
-import { DiGithubBadge } from 'react-icons/di';
-
-const gitHubLabel = "GitHub Repo"
+import ProjectHeader from "./ProjectHeader";
 
 function Projects() {
   return (
     <div className="section">
       <div className="item-entry">
-        <div className="item-header">
-          <div className="item-title">
-            <h3 >Portfolio Website</h3>
-            <a
-              key={gitHubLabel}
-              aria-label={gitHubLabel}
-              title={gitHubLabel}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/NanoRossi/PortfolioSite"
-              className="github-icon">
-              <DiGithubBadge />
-            </a>
-          </div>
+        <ProjectHeader
+          title="Portfolio Website"
+          repoLink="https://github.com/NanoRossi/PortfolioSite"
+        />
+        <div className="item-details">
+          <p><strong>Summary:</strong> This is the site you're currently viewing.</p>
+          <p><strong>Purpose:</strong> I needed a space to consolidate and explain the projects I was working on.</p>
+          <p><strong>Technologies:</strong> ReactJS</p>
         </div>
+      </div>
+
+
+      <div className="item-entry">
+        <ProjectHeader title="Lyrics Game" repoLink="https://github.com/NanoRossi/LyricsGame" />
         <ul className="item-description">
           <li>A bunch of stuff</li>
         </ul>
       </div>
 
       <div className="item-entry">
-        <div className="item-header">
-          <div className="item-title">
-            <h3>Lyrics Game</h3>
-            <a
-              key={gitHubLabel}
-              aria-label={gitHubLabel}
-              title={gitHubLabel}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/NanoRossi/LyricsGame"
-              className="github-icon">
-              <DiGithubBadge />
-            </a>
-          </div>
-        </div>
-        <ul className="item-description">
-          <li>A bunch of stuff</li>
-        </ul>
-      </div>
-
-      <div className="item-entry">
-        <div className="item-header">
-          <div className="item-title">
-            <h3>EA College Football 26 - Coach Planner</h3>
-            <a
-              key={gitHubLabel}
-              aria-label={gitHubLabel}
-              title={gitHubLabel}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/NanoRossi/CFB-Coach-Planner"
-              className="github-icon">
-              <DiGithubBadge />
-            </a>
-          </div>
-        </div>
+        <ProjectHeader title="EA College Football 26 - Coach Planner" repoLink="https://github.com/NanoRossi/CFB-Coach-Planner" />
         <ul className="item-description">
           <li>A bunch of stuff</li>
         </ul>

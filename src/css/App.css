@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #1e293b;
+  --color-muted: #6b7280;
+  --color-bg: #f9fafb;
+  --color-bg-section: #ffffff;
+  --color-bg-main: #f1f5f9;
+  --color-link: #0077b6;
+  --color-header-bg: linear-gradient(to right, #0f172a, #1e293b);
+  --color-header: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-section-shadow: rgba(0, 0, 0, 0.04);
+  --color-toggle: #ccc;
+  --color-toggle-active: #0ea5e9;
+  --color-accent: #3b82f6
+}
+
+body.dark-mode {
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-bg: #0f172a;
+  --color-bg-section: #1e293b;
+  --color-bg-main: #0f172a;
+  --color-link: #38bdf8;
+  --color-border: #334155;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-section-shadow: rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    --color-text: #f1f5f9;
+    --color-muted: #94a3b8;
+    --color-bg: #0f172a;
+    --color-bg-section: #1e293b;
+    --color-bg-main: #0f172a;
+    --color-link: #38bdf8;
+    --color-border: #334155;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-section-shadow: rgba(0, 0, 0, 0.3);
+  }
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  width: 100%;       
+  flex-direction: row; 
+  flex-wrap: wrap;
+  min-height: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: var(--color-bg-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (max-width: 820px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

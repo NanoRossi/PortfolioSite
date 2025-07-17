@@ -21,6 +21,14 @@ const socialLinks = [
 function Sidebar() {
   return (
     <div className="sidebar">
+      <div className="profile-picture-container">
+        <img
+          src={`${process.env.PUBLIC_URL}/profile-picture.jpeg`}
+          alt="Your Name"
+          className="profile-picture"
+        />
+      </div>
+
       <h2 className="text-theme">About Me</h2>
       <p className="text-theme">A work in progress website</p>
       <h3 className="text-theme">Connect</h3>

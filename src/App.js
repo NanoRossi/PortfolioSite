@@ -1,5 +1,5 @@
 // App.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -8,10 +8,10 @@ import MainContent from './components/MainContent';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-useEffect(() => {
-  document.body.classList.toggle('dark-mode', darkMode);
-  document.body.classList.toggle('light-mode', !darkMode);
-}, [darkMode]);
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+    document.body.classList.toggle('light-mode', !darkMode);
+  }, [darkMode]);
 
   useEffect(() => {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

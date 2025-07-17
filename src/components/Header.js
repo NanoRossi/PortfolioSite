@@ -1,6 +1,3 @@
-// Header.js
-import React from 'react';
-
 function Header({ darkMode, setDarkMode }) {
   return (
     <header>

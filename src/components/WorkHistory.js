@@ -1,5 +1,3 @@
-import React from 'react';
-
 function WorkHistory() {
   return (
     <div className="section">

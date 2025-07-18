@@ -79,6 +79,7 @@
     border-bottom: 5px solid var(--color-border);
     justify-content: center;
     text-align: center;
+    padding: 1rem 1rem;
   }
 
   .social-links {

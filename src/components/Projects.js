@@ -10,7 +10,7 @@ function Projects() {
           itchIoLink=""
         />
         <div className="item-details">
-          <p>Following the previous two projects this felt like the natural next step, somewhere to act as a hub to it all that I can point people to.</p>
+          <p>Following the previous two projects this felt like the natural next step, somewhere to act as a hub that I can point people to.</p>
           <p>This site is written in <b>React</b></p>
         </div>
       </div>
@@ -22,8 +22,8 @@ function Projects() {
           itchIoLink="https://nanorossi.itch.io/hot-milk-lyric-guesser"
         />
         <p>Since the explosion of Wordle in 2021 there have been numerous different versions and copycats of it. I wanted to create an iteration that would challenge you to guess a song title from it's lyrics.
-          This project is split into two parts, one is a lyrics scraper that will take an artist name and scrap all of their songs and lyrics from a popular website databse.
-          The second part is an interactive game where you have five guesses to guess a title given a lyric and then you can exchange more lyrics for less points.
+          This project is split into two parts, one is a lyrics scraper that will take an artist name and scrap all of their songs and lyrics from a popular website database.
+          The second part is an interactive game where you have five guesses to guess a song's title given a lyric while you have the option to receive more lyrics at the cost of less points should you be successful.
         </p>
         <br></br>
         <p>I wrote the project in a way to enable the ability to spin up artist or genre specific versions relatively quickly</p>
@@ -38,7 +38,7 @@ function Projects() {
           itchIoLink="https://nanorossi.itch.io/cfb26coachplanner"
         />
         <p>The EA College Football game series contains an indepth skill tree for your created coach, in which there are many potential paths to take.
-          I play in a competitive online league and discussion often drifts to uselss tools or utiltiies that the players would like to use.
+          I play in a competitive online league and discussion often drifts to tools or utiltiies that the players would like to use.
           So I thought I would take it upon myself to build one of them, a way to plan out how you intend to build your coach, allowing players to experiment and see what combinations of abilities they can or can't afford.
         </p>
         <br></br>

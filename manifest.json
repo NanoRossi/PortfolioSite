@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ross Oliver",
+  "name": "Ross Oliver Portfolio Site",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "profile-picture.jpeg",
+      "sizes": "457x453",
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",

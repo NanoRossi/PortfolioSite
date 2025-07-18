@@ -1,5 +1,5 @@
 import { DiGithubBadge } from 'react-icons/di';
-import { FaLinkedin, FaBluesky } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa6';
 import { CiMail } from 'react-icons/ci';
 
 const socialLinks = [
@@ -11,12 +11,8 @@ const socialLinks = [
   },
   {
     href: 'mailto:rossoliver.work@gmail.com', label: 'Email', Icon: CiMail
-  },
-  {
-    href: 'https://bsky.app/profile/example.bsky.social', label: 'Bluesky', Icon: FaBluesky
   }
 ];
-
 
 function Sidebar() {
   return (
@@ -30,7 +26,7 @@ function Sidebar() {
       </div>
 
       <h2 className="text-theme">About Me</h2>
-      <p className="text-theme">A work in progress website</p>
+      <p className="text-theme">A Welsh Software Developer with a love for all things video games, pop punk/emo music, NFL, F1 and Newport County AFC</p>
       <h3 className="text-theme">Connect</h3>
       <div className="social-links">
         {socialLinks.map(({ href, label, Icon, className }) => (

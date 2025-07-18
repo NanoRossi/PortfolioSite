@@ -7,8 +7,8 @@ function MainContent() {
   return (
     <div className="main-content">
       <CollapsibleSection title="Work History" className="section"><WorkHistory /></CollapsibleSection>
-      <CollapsibleSection title="Education" className="section"><Education /></CollapsibleSection>
       <CollapsibleSection title="Projects" className="section"><Projects /></CollapsibleSection>
+      <CollapsibleSection title="Education" className="section"><Education /></CollapsibleSection>
     </div>
   );
 }

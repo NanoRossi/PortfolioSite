@@ -5,6 +5,7 @@ function WorkHistory() {
         <div className="item-header">
           <div>
             <h3 className="item-title">Senior Software Engineer</h3>
+            <p className="company-name">Hansen Technologies</p>
           </div>
           <div className="item-dates">
             <span>May 2017 – Present</span>

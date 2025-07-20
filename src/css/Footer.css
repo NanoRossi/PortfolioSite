@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background-color: var(--color-bg-main);
+  font-style: italic;
+}
+
+footer span {
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}

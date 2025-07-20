@@ -5,10 +5,12 @@ import '../css/CollapsibleSection.css';
 import '../css/Header.css';
 import '../css/Section.css';
 import '../css/Sidebar.css';
+import '../css/Footer.css';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
 import MainContent from './MainContent';
+import Footer from './Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,7 +30,10 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="content-container">
         <Sidebar />
-        <MainContent />
+        <div className="main-column">
+          <MainContent />
+          <Footer />
+        </div>
       </div>
     </div>
   );

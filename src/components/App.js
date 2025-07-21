@@ -30,7 +30,7 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="content-container">
         <Sidebar />
-        <div className="main-column">
+        <div className="main-content">
           <MainContent />
           <Footer />
         </div>

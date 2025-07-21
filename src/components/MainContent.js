@@ -5,7 +5,7 @@ import CollapsibleSection from "./CollapsibleSection";
 
 function MainContent() {
   return (
-    <div className="main-content">
+    <div>
       <CollapsibleSection title="Work History" className="section"><WorkHistory /></CollapsibleSection>
       <CollapsibleSection title="Projects" className="section"><Projects /></CollapsibleSection>
       <CollapsibleSection title="Education" className="section"><Education /></CollapsibleSection>

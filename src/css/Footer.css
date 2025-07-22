@@ -5,10 +5,10 @@ footer {
   color: var(--color-text);
   background-color: var(--color-bg-main);
   font-style: italic;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 footer span {
   display: block;
   opacity: 0.8;
-  transition: opacity 0.3s ease;
 }

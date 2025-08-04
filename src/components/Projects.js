@@ -17,7 +17,7 @@ function Projects() {
             or how many additions were made in a random month/year.
           </p>
           <p>This project features a client written in <b>React</b> and a server written in <b>.NET 8</b> that uses the Discogs.com API to collect data.</p>
-          <p>The application also includes <b>Dockerfiles</b> and their own <b>Helm Charts</b></p>
+          <p>The application can also be deployed in  <b>Docker</b> and has it's own <b>Helm Charts</b></p>
         </div>
       </div >
 

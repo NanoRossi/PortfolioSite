@@ -5,6 +5,24 @@ function Projects() {
     <div className="section">
       <div className="item-entry">
         <ProjectHeader
+          title="Custom Discogs Dashboard"
+          repoLink="https://github.com/NanoRossi/Custom-Discogs-Dashboard"
+          itchIoLink=""
+        />
+        <div className="item-details">
+          <p>One of my hobbies outside of programming is music and I am a keen collector of Vinyl Records.</p>
+          <p>I found myself at a loss for a record to play on a random afternoon, and had the idea to create it, a single button that would pick a random item from my collection.
+            From there the idea evolved into a full custom dashboard, displaying recent additions to the collection, a user's wantlist, and numerous ways to query the database.
+            For me the highlight is the ability for the app to generate pseudo random facts about the collection, including how many entries for a given artist,
+            or how many additions were made in a random month/year.
+          </p>
+          <p>This project features a client written in <b>React</b> and a server written in <b>.NET 8</b> that uses the Discogs.com API to collect data.</p>
+          <p>The application also includes <b>Dockerfiles</b> and their own <b>Helm Charts</b></p>
+        </div>
+      </div >
+
+      <div className="item-entry">
+        <ProjectHeader
           title="Portfolio Website"
           repoLink="https://github.com/NanoRossi/PortfolioSite"
           itchIoLink=""
@@ -26,7 +44,7 @@ function Projects() {
           The second part is an interactive game where you have five guesses to guess a song's title given a lyric while you have the option to receive more lyrics at the cost of less points should you be successful.
         </p>
         <br></br>
-        <p>I wrote the project in a way to enable the ability to spin up artist or genre specific versions relatively quickly</p>
+        <p>I wrote the project in a way to enable the ability to spin up artist or genre specific versions relatively quickly.</p>
         <br></br>
         <p>The scraper was built using <b>.NET 8</b>, and the game itself using <b>React</b>. A version of the game centered around Manchester band "Hot Milk" is hosted on itch.io.</p>
       </div>
@@ -44,7 +62,7 @@ function Projects() {
         <br></br>
         <p>I initially wrote this against the '25 version of the game, but came back to it following the '26 edition's release to fully flesh out the features.</p>
         <br></br>
-        <p>The tool is written in <b>React</b> and was my first attempt at using the framework.</p>
+        <p>The tool is written in <b>React</b></p>
       </div>
     </div >
   );

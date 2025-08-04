@@ -2,8 +2,8 @@ function Footer() {
   return (
     <footer>
       <div className="footer-content">
-        <span>Put the work in, plant a garden, try to stay afloat</span>
-        <span>- Dan Campbell</span>
+        <span>Never trust a computer you can't throw out a window</span>
+        <span>- Steve Wozniak</span>
       </div>
     </footer>
   );

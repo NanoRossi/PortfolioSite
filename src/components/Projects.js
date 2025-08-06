@@ -56,7 +56,7 @@ function Projects() {
           itchIoLink="https://nanorossi.itch.io/cfb26coachplanner"
         />
         <p>The EA College Football game series contains an indepth skill tree for your created coach, in which there are many potential paths to take.
-          I play in a competitive online league and discussion often drifts to tools or utiltiies that the players would like to use.
+          I play in a competitive online league and discussion often drifts to tools or utilities that the players would like to use.
           So I thought I would take it upon myself to build one of them, a way to plan out how you intend to build your coach, allowing players to experiment and see what combinations of abilities they can or can't afford.
         </p>
         <br></br>

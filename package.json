@@ -1,7 +1,7 @@
 {
   "homepage": "https://www.ross-oliver-dev.co.uk",
   "name": "portfolio-site",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

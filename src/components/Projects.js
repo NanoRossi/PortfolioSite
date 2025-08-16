@@ -7,7 +7,7 @@ function Projects() {
         <ProjectHeader
           title="Custom Discogs Dashboard"
           repoLink="https://github.com/NanoRossi/Custom-Discogs-Dashboard"
-          itchIoLink=""
+          hostingLink=""
         />
         <div className="item-details">
           <p>One of my hobbies outside of programming is music and I am a keen collector of Vinyl Records.</p>
@@ -26,7 +26,7 @@ function Projects() {
         <ProjectHeader
           title="Portfolio Website"
           repoLink="https://github.com/NanoRossi/PortfolioSite"
-          itchIoLink=""
+          hostingLink=""
         />
         <div className="item-details">
           <p>Following the previous two projects this felt like the natural next step, somewhere to act as a hub that I can point people to.</p>
@@ -38,7 +38,7 @@ function Projects() {
         <ProjectHeader
           title="Lyrics Game"
           repoLink="https://github.com/NanoRossi/LyricsGame"
-          itchIoLink="https://nanorossi.itch.io/hot-milk-lyric-guesser"
+          hostingLink="https://nanorossi.itch.io/hot-milk-lyric-guesser"
         />
         <p>Since the explosion of Wordle in 2021 there have been numerous different versions and copycats of it. I wanted to create an iteration that would challenge you to guess a song title from it's lyrics.
           This project is split into two parts, one is a lyrics scraper that will take an artist name and scrap all of their songs and lyrics from a popular website database.
@@ -52,9 +52,9 @@ function Projects() {
 
       <div className="item-entry">
         <ProjectHeader
-          title="EA College Football - Coach Planner"
-          repoLink="https://github.com/NanoRossi/CFB-Coach-Planner"
-          itchIoLink="https://nanorossi.itch.io/cfb26coachplanner"
+          title="EA College Football - Coach Builder"
+          repoLink="https://github.com/NanoRossi/CFB-Coach-Builder"
+          hostingLink="https://www.cfb-coach-builder.com/"
         />
         <p>The EA College Football game series contains an indepth skill tree for your created coach, in which there are many potential paths to take.
           I play in a competitive online league and discussion often drifts to tools or utilities that the players would like to use.
@@ -62,7 +62,10 @@ function Projects() {
           The game's own internal logic is coded into the tool, including dynamic pricing of abilities and unlock conditions.
         </p>
         <br></br>
-        <p>I initially wrote this against the '25 version of the game, but came back to it following the '26 edition's release to fully flesh out the features.</p>
+        <p>I initially wrote this against the '25 version of the game, but came back to it following the '26 edition's release to fully flesh out the features. And finally, after completing some of the other projects on this page,
+          and gaining more confidence and knowledge of both the framework and hosting a site, I came back to this project to fully flesh it out. Redesigning the UI, adding multiple new features, and spending a lot of time ensuring the
+          project was mobile friendly with responsive design.
+        </p>
         <br></br>
         <p>The tool is written in <b>React</b></p>
       </div>

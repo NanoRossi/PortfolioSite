@@ -1,12 +1,12 @@
 import { DiGithubBadge } from 'react-icons/di';
-import { FaItchIo } from 'react-icons/fa';
+import { GoProjectSymlink } from "react-icons/go";
 
 const gitHubLabel = "GitHub Repo"
-const itchIoLabel = "Itch.io Deployment"
+const deploymentLabel = "Project Deployment"
 
-export default function ProjectHeader({ title, repoLink, itchIoLink }) {
+export default function ProjectHeader({ title, repoLink, hostingLink }) {
 
-    let isOnItch = (itchIoLink !== "");
+    let isDeployed = (hostingLink !== "");
 
     return (
         <div className="item-header">
@@ -22,15 +22,15 @@ export default function ProjectHeader({ title, repoLink, itchIoLink }) {
                     className="github-icon">
                     <DiGithubBadge />
                 </a>
-                {isOnItch && <a
-                    key={itchIoLabel}
-                    aria-label={itchIoLabel}
-                    title={itchIoLabel}
+                {isDeployed && <a
+                    key={deploymentLabel}
+                    aria-label={deploymentLabel}
+                    title={deploymentLabel}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={itchIoLink}
+                    href={hostingLink}
                     className="github-icon">
-                    <FaItchIo />
+                    <GoProjectSymlink />
                 </a>}
             </div>
         </div>

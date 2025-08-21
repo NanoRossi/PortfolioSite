@@ -1,9 +1,8 @@
 // App.js
 import { useState, useEffect } from 'react';
 import '../css/App.css';
-import '../css/CollapsibleSection.css';
+import '../css/Content.css';
 import '../css/Header.css';
-import '../css/Section.css';
 import '../css/Sidebar.css';
 import '../css/Footer.css';
 
@@ -12,7 +11,7 @@ import Sidebar from './Sidebar';
 import MainContent from './MainContent';
 import Footer from './Footer';
 
-function App() {
+export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -38,5 +37,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

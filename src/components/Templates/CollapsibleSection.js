@@ -9,7 +9,9 @@ export default function CollapsibleSection({ title, children }) {
         <div className="collapsible-section">
             <div className="collapsible-header" onClick={toggle}>
                 <h2 className="text-theme">{title}</h2>
-                <span className="toggle-icon">{isOpen ? "▾" : "▸"}</span>
+                <div className="item-toggle">
+                    <span className="toggle-icon">{isOpen ? "▾" : "▸"}</span>
+                </div>
             </div>
             {isOpen && <div className="collapsible-content">{children}</div>}
         </div>

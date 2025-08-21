@@ -1,4 +1,4 @@
-function Header({ darkMode, setDarkMode }) {
+export default function Header({ darkMode, setDarkMode }) {
   return (
     <header>
       <div className="header-content">
@@ -18,5 +18,3 @@ function Header({ darkMode, setDarkMode }) {
     </header>
   );
 }
-
-export default Header;

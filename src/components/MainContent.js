@@ -1,9 +1,9 @@
-import Education from './Education';
-import WorkHistory from './WorkHistory';
-import Projects from './Projects';
-import CollapsibleSection from "./CollapsibleSection";
+import Education from './MainContentSections/Education';
+import WorkHistory from './MainContentSections/WorkHistory';
+import Projects from './MainContentSections/Projects';
+import CollapsibleSection from "./Templates/CollapsibleSection";
 
-function MainContent() {
+export default function MainContent() {
   return (
     <div>
       <CollapsibleSection title="Work History" className="section"><WorkHistory /></CollapsibleSection>
@@ -12,5 +12,3 @@ function MainContent() {
     </div>
   );
 }
-
-export default MainContent;

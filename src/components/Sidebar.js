@@ -14,7 +14,7 @@ const socialLinks = [
   }
 ];
 
-function Sidebar() {
+export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="profile-picture-container">
@@ -46,5 +46,3 @@ function Sidebar() {
     </div>
   );
 }
-
-export default Sidebar;

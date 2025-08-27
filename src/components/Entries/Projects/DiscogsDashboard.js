@@ -16,7 +16,7 @@ export default function DiscogsDashboard() {
                 </p>
                 <p>I have deployed this application on my home network to a Raspberry Pi combined with a Touchscreen, allowing me to have a custom dashboard that I can interact with at any time.</p>
                 <p>This project features a client written in <b>React</b> and a server written in <b>.NET 8</b> that uses the Discogs.com API to collect data.</p>
-                <p>The application can also be deployed in  <b>Docker</b> and has it's own <b>Helm Charts</b></p>
+                <p>The application can also be deployed in <b>Docker</b> and <b>Kubernetes</b> via a <b>Helm</b> deployment</p>
             </ProjectItemEntry>
         </div>
     );

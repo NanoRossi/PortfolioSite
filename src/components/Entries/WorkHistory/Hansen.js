@@ -4,9 +4,9 @@ export default function Hansen() {
     return (
         <div className="section">
             <ItemEntry
-                title="Senior Software Engineer"
+                title="Senior Software Developer"
                 company="Hansen Technologies"
-                dates="May 2017 – Present"
+                dates="May 2017 – Dec 2025"
             >
                 <p>
                     I began at Hansen (formerly Sigma Systems) as a Junior Developer and

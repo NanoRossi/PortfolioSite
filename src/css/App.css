@@ -18,8 +18,8 @@
   --color-header-bg: linear-gradient(to right, #0f172a, #1e293b);
   --color-header: #f1f5f9;
   --color-border: #e2e8f0;
-  --color-shadow: rgba(0, 0, 0, 0.05);
-  --color-section-shadow: rgba(0, 0, 0, 0.04);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-section-shadow: rgba(0, 0, 0, 0.3);
   --color-toggle: #ccc;
   --color-toggle-active: #0ea5e9;
   --color-accent: #3b82f6;

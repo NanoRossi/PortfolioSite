@@ -10,7 +10,7 @@ const socialLinks = [
     href: 'https://github.com/NanoRossi', label: 'GitHub', Icon: DiGithubBadge
   },
   {
-    href: 'mailto:rossoliver.work@gmail.com', label: 'Email', Icon: CiMail
+    href: 'mailto:ross.oliver.work@gmail.com', label: 'Email', Icon: CiMail
   }
 ];
 

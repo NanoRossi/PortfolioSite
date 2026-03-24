@@ -14,12 +14,12 @@ export default function Hansen() {
                 </p>
                 <p>
                     When joining in 2017 the project I was assigned to was a NodeJS application, in 2018 we began porting it
-                    into .NET Core, and we have maintained compatibility with .NET as newer versions have released. In 2020 we began
+                    into .NET Core, and we maintained compatibility with .NET as newer versions were released. In 2020 we began
                     working with AWS and Kubernetes, allowing me to learn a whole new set of skills and technologies.
                 </p>
                 <p>
                     During my journey at Hansen I found my love for automation testing, taking sole ownership of an acceptance test suite written in Specflow.
-                    Alongside other testing methods such as unit tests, integration tests and performance tests that are run on a daily basis.
+                    Alongside other testing methods such as unit tests, integration tests and performance tests that were run on a daily basis.
                     Outside of this I have a keen interest in the concept of 'Mutation Testing', going that one step further to ensure developers are writing concise and effective unit tests.
                 </p>
                 <p>
